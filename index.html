@@ -1,11 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Smart-task_Planner</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
+<script src="./index.js"></script>
+
 <body>
-    
+    <div id="fullDiv">
+        <div id="headerTitle">
+            <h1>Smart Task Planner</h1>
+            <h4>Plan Smartly, Not Stressfully</h4>
+        </div>
+        <div>
+            <table >
+                <tr>
+                    <th>Task Name</th>
+                    <th>Priority</th>
+                    <th>Energy</th>
+                </tr>
+                <tr id="Conditonal-row" style="display: table-row;">
+                    <td>
+                        <input id="taskName1"></input>
+                    </td>
+                    <td>
+                        <select id="priority1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <!-- <input id = "priority1"></input> -->
+                    </td>
+                    <td>
+                        <select id="energy1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <!-- <input id = "energy1"></input> -->
+                    </td>
+                </tr>
+            </table>
+            <Button     onclick="addTask()">Add Task</Button>
+            <div>
+                <h1>All Task Based on Priority</h1>
+                <table >
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Task Name</th>
+                            <th>Priority</th>
+                            <th>Energy</th>
+                            <th>Status</th>
+                            <th>Completed</th>
+                        </tr>
+                    </thead>
+                    <tbody id="Prioritytable">
+
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div>
+                <h1>Completed Tasks</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Task Name</th>
+                            <th>Priority</th>
+                            <th>Energy</th>
+                            <th>Status</th>
+                            <th>Completed</th>
+                        </tr>
+                    </thead>
+                    <tbody id="completedTable">
+
+                    </tbody>
+                </table>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
 </body>
+
 </html>
