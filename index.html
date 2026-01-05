@@ -8,27 +8,28 @@
     <link rel="stylesheet" href="styles.css">
 
 </head>
-<script src="./index.js"></script>
+<!-- <script src="./index.js"></script> -->
 
-<body>
+<body onload="showSortedTask()">
     <div id="fullDiv">
         <div id="headerTitle">
             <h1>Smart Task Planner</h1>
             <h4>Plan Smartly, Not Stressfully</h4>
         </div>
-        <div>
-            <table >
+        <div >
+            <table>
                 <tr>
                     <th>Task Name</th>
                     <th>Priority</th>
                     <th>Energy</th>
                 </tr>
-                <tr id="Conditonal-row" style="display: table-row;">
-                    <td>
+                <tr id="Conditonal-row">
+                    <td class="inputBox">
                         <input id="taskName1"></input>
                     </td>
                     <td>
-                        <select id="priority1">
+                        <select class="select" id="priority1">
+                            <option>Please Select priority</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -38,7 +39,8 @@
                         <!-- <input id = "priority1"></input> -->
                     </td>
                     <td>
-                        <select id="energy1">
+                        <select class="select" id="energy1">
+                            <option>Please Select energy</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -49,9 +51,12 @@
                     </td>
                 </tr>
             </table>
-            <Button     onclick="addTask()">Add Task</Button>
-            <div>
-                <h1>All Task Based on Priority</h1>
+        </div>
+            <Button id= "btn" onclick="addTask()">Add Task</Button>
+
+        <div class ="table_section">
+            <h1>All Task Based on Priority</h1>
+            <div class = "table_container">
                 <table >
                     <thead>
                         <tr>
@@ -70,8 +75,9 @@
 
             </div>
 
-            <div>
+           
                 <h1>Completed Tasks</h1>
+             <div class = " table_container">
                 <table>
                     <thead>
                         <tr>
@@ -89,13 +95,11 @@
                 </table>
 
             </div>
-
-
-
         </div>
+
+
     </div>
-
-
+<script src="./index.js"></script>
 </body>
 
 </html>
