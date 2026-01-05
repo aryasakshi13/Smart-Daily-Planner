@@ -16,13 +16,16 @@
             <h1>Smart Task Planner</h1>
             <h4>Plan Smartly, Not Stressfully</h4>
         </div>
-        <div >
+       <div class = "table_container">
             <table>
+                <thead>
                 <tr>
                     <th>Task Name</th>
                     <th>Priority</th>
                     <th>Energy</th>
                 </tr>
+                </thead>
+                <tbody>
                 <tr id="Conditonal-row">
                     <td class="inputBox">
                         <input id="taskName1"></input>
@@ -50,6 +53,7 @@
                         <!-- <input id = "energy1"></input> -->
                     </td>
                 </tr>
+                </tbody>
             </table>
         </div>
             <Button id= "btn" onclick="addTask()">Add Task</Button>

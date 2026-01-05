@@ -62,7 +62,6 @@ table {
     border-radius: 10px;
     border-spacing: 0px;
     table-layout: fixed;
-
     
 }
 
@@ -134,6 +133,50 @@ td:nth-child(2){
     background-color:  #0F766E;
     color: white;
    
+}
+@media(max-width: 900px){
+    body{
+        padding-top: 10px;
+
+    }
+
+    #fullDiv{
+        max-width: 95%;
+        padding: 12px;
+        margin: 10px;
+    }
+    .inputBox input{
+        width: 95%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .select {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    button{
+        width: 100%;
+
+    }
+    table{
+        font-size: 12px;
+        min-width: 600px;
+
+    }
+     td, th {
+        padding: 0 6px;
+        height: 40px;
+        line-height: 40 px;
+
+     }
+     .table_container{
+        max-height: 180px;
+     }
+
+
+    
 }
 
 
