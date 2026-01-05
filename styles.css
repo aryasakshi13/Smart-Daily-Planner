@@ -19,6 +19,7 @@ body {
   border: 2px solid #333;  
   border-radius: 6px;       
   background-color: #e7b79d;
+  overflow: hidden;
   
 }
 #headerTitle {
@@ -35,9 +36,12 @@ button {
 }
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
     margin-top: 15px;
     border-radius: 10px;
+    border-spacing: 0px;
+    table-layout: fixed;
+
     
 }
 
@@ -60,10 +64,24 @@ th:last-child {
 }
 
 
-table,td {
+ td,th {
     border: 1px solid #ccc;
+    padding: 10px;
    
+} 
+.table_container{
+    overflow: auto;
+    max-height: 200px;
+    margin-top:  10px;;
+   
+
 }
+thead th{
+   
+    position: Sticky;
+    top: 0px;
+
+} 
 
 
 
