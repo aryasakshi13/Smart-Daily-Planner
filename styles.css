@@ -36,8 +36,8 @@ button {
 }
 table {
     width: 100%;
-    border-collapse: separate;
-    margin-top: 15px;
+    border-collapse:separate;
+    margin: 0;
     border-radius: 10px;
     border-spacing: 0px;
     table-layout: fixed;
@@ -45,16 +45,16 @@ table {
     
 }
 
-th {
+/* th {
     background-color: #3498db;
     color: white;
-    padding: 10px;
+    padding: 10px;git  
 }
 
 td {
     padding: 8px;
     text-align: center;
-}
+} */
 th:first-child {
     border-top-left-radius: 10px;
 }
@@ -66,24 +66,33 @@ th:last-child {
 
  td,th {
     border: 1px solid #ccc;
-    padding: 10px;
-   
+    padding:0 10px;
+    height: 45px;
+    line-height: 45px;
+    text-overflow:ellipsis ;
+    overflow: hidden;
+    white-space: nowrap;
 } 
 .table_container{
-    overflow: auto;
-    max-height: 200px;
-    margin-top:  10px;;
+    overflow-y: auto;
+     max-height: 220px;
+    margin-bottom: 20px;;
+     
    
-
 }
 thead th{
+   background-color: #3498db;
+    color: white;
+    position: sticky;
+    text-align: center;
+    top: 0;
+    z-index:2;
    
-    position: Sticky;
-    top: 0px;
-
+    
 } 
-
-
-
-
-
+ th:nth-child(2),
+td:nth-child(2){
+    white-space: normal;
+    word-break: break-word;
+   
+} 
